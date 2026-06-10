@@ -12,7 +12,7 @@
     <header id="container">
         <div id="header">
             <div class="picture">
-                <img src="images/catsHeader.png" alt="Two cats sitting next to eachother"
+                <img src="images/RobbieHeader.JPG" alt="Man smiling and experiencing snow."
                     style="padding:10px; max-height: 140pt; object-fit: contain;">
                 <div id="nav">
                     <p><a href="index.html">Home</a></p>
@@ -30,37 +30,47 @@
     <!-- Summary and Intent Section Beginning -->
     <br>
     <main id="resume">
+        <!-- Resume -->
         <section>
             <h1>Professional Summary</h1>
             <p>Detail-oriented finance and operations professional with experience in <strong>financial reporting,
-                    process
-                    automation, and data-driven decision-making.</strong> Skilled in compiling ad-hoc reports,
-                streamlining
-                workflows, and supporting cross-functional teams with accounting, IT, HR, and compliance expertise.
+                    process automation, and data-driven decision-making.</strong> Skilled in compiling ad-hoc reports,
+                streamlining workflows, and supporting cross-functional teams with accounting, IT, HR, and compliance
+                expertise.
             </p>
             <hr>
-            <h1>Experience</h1>
-            <h2><span style="font-weight: bold;">Accounting Analyst,</span> <span style="font-size: 15px;"> Cal Poly
-                    Campus Dining | San Luis Obispo, CA</span></h2>
-            <p>Gathering and organizing ad hoc reports from Point of Sales including GrubHub, Oracle/Micros POS system,
-                and the Campus Dining Dollars system to create sales with streamlined excel reports that allowed plug in
-                generic reports from multiple systems to combined financial reports. Compiled and analyzed financial,
-                creating daily, weekly and monthly reports that reduced decision-making time by 25%
-            </p>
-            <h2><span style="font-weight: bold;">HR Generalist,</span> <span style="font-size: 15px;"> Edge Autonomy |
-                    San Luis Obispo, CA</span></h2>
-            <p> Reported on KPIs regarding hiring, retention, cost per hire and training and employee development to
-                executive level staff.
-                Tracked and generated Power BI reports on the KPIs as well as internal HR reporting for healthcare
-                coverage and costs.
-                Managed onboarding for 50+ employees during a critical growth period, ensuring compliance with company
-                policies and federal/state regulations.
-                Implemented a software tracking system to streamline safety training, employee certifications, and
-                development programs.
-                Processed biweekly payroll and prepared entries for QuickBooks, ensuring accuracy & timeliness.
-            </p>
+            <!-- Experience -->
+            <section>
+                <h1>Experience</h1>
+                <h2><span style="font-weight: bold;">Accounting Analyst,</span> <span style="font-size: 15px;"> Cal Poly
+                        Campus Dining | San Luis Obispo, CA</span></h2>
+                <p>Gathering and organizing ad hoc reports from Point of Sales including GrubHub, Oracle/Micros POS
+                    system,
+                    and the Campus Dining Dollars system to create sales with streamlined excel reports that allowed
+                    plug in
+                    generic reports from multiple systems to combined financial reports. Compiled and analyzed
+                    financial,
+                    creating daily, weekly and monthly reports that reduced decision-making time by 25%
+                </p>
+                <h2><span style="font-weight: bold;">HR Generalist,</span> <span style="font-size: 15px;"> Edge Autonomy
+                        |
+                        San Luis Obispo, CA</span></h2>
+                <p> Reported on KPIs regarding hiring, retention, cost per hire and training and employee development to
+                    executive level staff.
+                    Tracked and generated Power BI reports on the KPIs as well as internal HR reporting for healthcare
+                    coverage and costs.
+                    Managed onboarding for 50+ employees during a critical growth period, ensuring compliance with
+                    company
+                    policies and federal/state regulations.
+                    Implemented a software tracking system to streamline safety training, employee certifications, and
+                    development programs.
+                    Processed biweekly payroll and prepared entries for QuickBooks, ensuring accuracy & timeliness.
+                </p>
+
+            </section>
             <hr>
-            <skills>
+                            <!-- Skills -->
+            <section>
                 <table id="skills">
                     <h1>Skills & Software</h1>
                     <caption style="color: white;">
@@ -68,10 +78,10 @@
                     </caption>
                     <thead>
                         <tr>
-                            <td>Data Analysis</td>
-                            <td>Microsoft Access</td>
-                            <td>SQL</td>
-                            <td>Python</td>
+                            <th>Data Analysis</th>
+                            <th>Microsoft Access</th>
+                            <th>SQL</th>
+                            <th>Python</th>
                         </tr>
                     </thead>
                     <tbody>
@@ -90,33 +100,42 @@
                     </tbody>
                 </table>
             </skills>
-        </section>
+        </skills>
         <br>
         <hr>
-        <footer id="footer">
+        <!-- Education -->
+        <section id="footer">
             <h1>Education</h1>
             <h3><em>WGU Bachelors of Science in Data Analytics</em> - Anticipated Complete Date Nov. 2027</h3>
-        </footer>
+        </section>
         <hr>
-        <article>
-            <h1>My hobbies and interests</h1>
-            <ul>
-                <li>Rock Climbing</li>
-                <li>Fishing</li>
-                <li>Reading</li>
-                <li>Cooking</li>
-            </ul>
-        </article>
+        <!-- Hobbies and Interests -->
+        <section>
+            <article>
+                <h1>My hobbies and interests</h1>
+                <ul>
+                    <li>Rock Climbing</li>
+                    <li>Fishing</li>
+                    <li>Reading</li>
+                    <li>Cooking</li>
+                </ul>
+            </article>
+        </section>
     </main>
-    <p id="showDate"></p>
-    <button style="margin-bottom: 25px;" onclick="updateDate()">Why should you hire me?</button>
-
-</body>
-<script>
+    <!-- Script set in footer -->
+    <footer>
+        <p id="message"></p>
+        <p id="showDate"></p>
+        <button style="margin-bottom: 25px;" onclick="updateDate()">Why should you hire me?</button>
+    </footer>
+    <script>
     function updateDate() {
-        document.getElementById("showDate").textContent = "Please Hire Me. I need to support my cats. | Date: " + new Date().toDateString();
-        console.log("Please Hire Me. I need to support my cats.");
+        document.getElementById("message").textContent = "I need to support my cats.";
+        document.getElementById("showDate").textContent = "Date: " + new Date().toDateString();
+        console.log("Please hire me. My cats only eat the finest kibble.");
     }
 </script>
+</body>
+
 
 </html>
