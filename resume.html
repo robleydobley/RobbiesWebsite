@@ -9,7 +9,7 @@
 
 <body>
     <!-- Header Section Beginning. Nav bar is embedded within the header. -->
-    <div id="container">
+    <header id="container">
         <div id="header">
             <div class="picture">
                 <img src="images/catsHeader.png" alt="Two cats sitting next to eachother"
@@ -25,20 +25,98 @@
                 </h1>
             </div>
         </div>
-    </div>
+    </header>
     <!-- Header Section End -->
-     <!-- Summary and Intent Section Beginning -->
-     <main>
-        <section id="summary">
+    <!-- Summary and Intent Section Beginning -->
+    <br>
+    <main id="resume">
+        <section>
             <h1>Professional Summary</h1>
-            <p>Detail-oriented finance and operations professional with experience in financial reporting, process automation, and data-driven decision-making. Skilled in compiling ad-hoc reports, streamlining workflows, and supporting cross-functional teams with accounting, IT, HR, and compliance expertise.
-            </p><hr>
-            <h1>Work Experience</h1>
-            <h2><span style="font-weight: bold;">Accounting Analyst,</span> <span style="font-size: 15px;"> Cal Poly Campus Dining | San Luis Obispo, CA</span></h2>
-            <p>Gathering and organizing ad hoc reports from Point of Sales including GrubHub, Oracle/Micros POS system, and the Campus Dining Dollars system to create sales with streamlined excel reports that allowed plug in generic reports from multiple systems to combined financial reports. Compiled and analyzed financial, creating daily, weekly and monthly reports that reduced decision-making time by 25%
+            <p>Detail-oriented finance and operations professional with experience in <strong>financial reporting,
+                    process
+                    automation, and data-driven decision-making.</strong> Skilled in compiling ad-hoc reports,
+                streamlining
+                workflows, and supporting cross-functional teams with accounting, IT, HR, and compliance expertise.
             </p>
+            <hr>
+            <h1>Experience</h1>
+            <h2><span style="font-weight: bold;">Accounting Analyst,</span> <span style="font-size: 15px;"> Cal Poly
+                    Campus Dining | San Luis Obispo, CA</span></h2>
+            <p>Gathering and organizing ad hoc reports from Point of Sales including GrubHub, Oracle/Micros POS system,
+                and the Campus Dining Dollars system to create sales with streamlined excel reports that allowed plug in
+                generic reports from multiple systems to combined financial reports. Compiled and analyzed financial,
+                creating daily, weekly and monthly reports that reduced decision-making time by 25%
+            </p>
+            <h2><span style="font-weight: bold;">HR Generalist,</span> <span style="font-size: 15px;"> Edge Autonomy |
+                    San Luis Obispo, CA</span></h2>
+            <p> Reported on KPIs regarding hiring, retention, cost per hire and training and employee development to
+                executive level staff.
+                Tracked and generated Power BI reports on the KPIs as well as internal HR reporting for healthcare
+                coverage and costs.
+                Managed onboarding for 50+ employees during a critical growth period, ensuring compliance with company
+                policies and federal/state regulations.
+                Implemented a software tracking system to streamline safety training, employee certifications, and
+                development programs.
+                Processed biweekly payroll and prepared entries for QuickBooks, ensuring accuracy & timeliness.
+            </p>
+            <hr>
+            <skills>
+                <table id="skills">
+                    <h1>Skills & Software</h1>
+                    <caption style="color: white;">
+                        Skills, Languages and Software
+                    </caption>
+                    <thead>
+                        <tr>
+                            <td>Data Analysis</td>
+                            <td>Microsoft Access</td>
+                            <td>SQL</td>
+                            <td>Python</td>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>Data Management</td>
+                            <td>Excel</td>
+                            <td>Oracle</td>
+                            <td>Database Administration</td>
+                        </tr>
+                        <tr>
+                            <td>Cat Ear Scratching</td>
+                            <td>Accounting</td>
+                            <td>HTML</td>
+                            <td>Fishing</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </skills>
         </section>
-     </main>
+        <br>
+        <hr>
+        <footer id="footer">
+            <h1>Education</h1>
+            <h3><em>WGU Bachelors of Science in Data Analytics</em> - Anticipated Complete Date Nov. 2027</h3>
+        </footer>
+        <hr>
+        <article>
+            <h1>My hobbies and interests</h1>
+            <ul>
+                <li>Rock Climbing</li>
+                <li>Fishing</li>
+                <li>Reading</li>
+                <li>Cooking</li>
+            </ul>
+        </article>
+    </main>
+    <p id="showDate"></p>
+    <button style="margin-bottom: 25px;" onclick="updateDate()">Why should you hire me?</button>
+
 </body>
+<script>
+    function updateDate() {
+        document.getElementById("showDate").textContent = "Please Hire Me. I need to support my cats. | Date: " + new Date().toDateString();
+        console.log("Please Hire Me. I need to support my cats.");
+    }
+</script>
 
 </html>
