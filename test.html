@@ -4,110 +4,109 @@
 <!--YOU HAVE BEEN WARNED-->
 <!DOCTYPE html>
 <html lang="en">
-<!--Below contains a typical <head> element structure.-->
+
 <head>
     <meta charset="UTF-8">
-    <title>Resume</title>
+    <!--Insert a title below.-->
+    <title></title>
+    <!--If you like you can insert a favicon that appears as an image within the browsers tab.-->
     <link rel="icon" href="">
+    <!--Below is where you will link the stylesheet to your HTML that you will complete/fill with CSS.-->
     <link rel="stylesheet" href="">
 </head>
-<!--Below contains a typical <body> element structure.-->
+<!--Below is the body which will be require for each part of the PA.-->
+
 <body>
-    <!--Below are just some simple <span> elements that contains links to sections within this document that you can use.-->
-    <span><a href="#About">About Me</a></span>&nbsp;
-    <span><a href="#Job-1">Job 1</a></span>&nbsp;
-    <span><a href="#Job-2">Job 2</a></span>&nbsp;
-    <span><a href="#XXX">XXX</a></span>&nbsp;
-    <span><a href="#footer">End</a></span>&nbsp;<br><br>
-    <a href="" target="_blank"><img src=""
-            alt="Photo" width="300" height="250"></a><br>
-    <h4>Click to view my XXX!</h4>
-    <div id="showDate"></div>
+    <!--You must include headers on most of the documents. Also it is good practice to have a header within your HTML documents.-->
     <header>
-        <!--A simple <nav> element that contains some more links to the other HTML document for this PA.-->
-        <h1>John Doe's Resume</h1>
-        <p><em>Click on the links to view my cover letter & career goals.</em></p>
+        <!--You will need a h1 element for the PA requirements, I suggest filling the h1 with a title like you see below.-->
+        <h1>My Career Goals</h1>
+        <!--The <p> & <em> elements are required and adds clean text that you can use to label, emphasize, describe or just put general text.-->
+        <p><em></em></p>
+        <!--The <nav> element is another requirement that is simple to implement. I would use to reference links (<a> anchors) to your other HTML documents.-->
         <nav>
-            <ul>
-                <li><a class="nav-link" href="" target="_blank">Cover Letter</a></li>
-                <li><a class="nav-link" href="" target="_blank">Career Goals</a></li>
-            </ul>
+            <span><a class="nav-link" href="" target="_blank">Resume</a></span>&nbsp;
+            <span><a class="nav-link" href="" target="_blank">Cover Letter</a></span>
         </nav>
     </header>
+    <!--Again the <main> is a key component that you will see re-occur throughout this PA. Use it as an area to store your sections that will contain the bulk of your HTML.-->
     <main>
-        <!--This contains the <main> elements contents that aims at filling data in for the 'resume'-->
-        <section id="About">
-            <h2>Synopsis</h2>
-            <p style="white-space: pre-line;">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Incidunt, cupiditate.
-                 Aperiam excepturi, magnam vitae nisi corporis cum fugit qui id facere omnis, rerum, soluta maxime voluptatibus quae? Adipisci, iste autem!</p>
+        <!--The <section> elements are key and should also have ID attributes that you can reference within <a> elements so the course instructor can see your ability to implement better UX-->
+        <section id="cg-photo">
+            <!--It's important to label a section as its a requirement and it helps the course instructor understand what a particular section is being used for.-->
+            <h2>Photos</h2>
+            <!--<img> is important as its a requirement and helps add visual appeal to your PA. Keep the images relevant to the task.-->
+            <img src="" alt="" width="" height=""><br>
+            <!--VERY IMPORTANT. Please <cite> your images, videos & audio. A general rule of thumb is if you used an external source to populate data within your PA you should cite it.-->
+            <!--Citing your HTML is a requirement and it adds to the professionalism of your HTML. It can also protect you against copyright.-->
+            <cite></cite>
         </section>
         <hr>
-        <section id="#Job-1">
-            <img src="" alt="Logo">
-            <h2>Job 1</h2>
-            <ul>
-                <li>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Rerum odit ullam laborum deleniti perferendis tenetur, eligendi possimus optio? Veritatis reprehenderit rem mollitia a aliquid fuga est deleniti consequuntur. Vel, maiores.</li>
-                <li>Lorem ipsum dolor sit amet consectetur adipisicing elit. Et sed ducimus, in dignissimos maiores asperiores doloribus quod eos deserunt aliquid dolores qui mollitia ab reprehenderit. Magnam incidunt aut pariatur delectus?</li>
-                <li>Lorem ipsum dolor sit amet consectetur adipisicing elit. Numquam ex debitis iste porro dolor ea ducimus beatae ullam repudiandae. Odit quasi unde, alias id itaque blanditiis ad impedit ea consequuntur.</li>
-            </ul>
+        <section id="video">
+            <h2>Videos</h2>
+            <!--Adding videos is simple. Its just like adding images except be sure to add 'controls' as it provides the user functionality to control volume, playback speed, etc.-->
+            <video src="" alt="" controls width=""></video><br>
+            <!--Below is a really good free site for downloading videos. You can sign up for a free account to download a watermarked video. Don't forget to cite your work!-->
+            <cite>https://stock.adobe.com</cite>
         </section>
         <hr>
-        <section id="#Job-2">
-            <img src="" alt="Photo" width="526" height="322">
-            <h2>Job 2</h2>
-            <ul>
-                <li>Lorem ipsum dolor sit amet consectetur adipisicing elit. Odit dolores quo quibusdam temporibus quisquam? Aspernatur amet ex a aliquid obcaecati incidunt eum laudantium accusamus corporis at! Ipsam libero excepturi optio.</li>
-                <li>Lorem ipsum dolor sit amet consectetur adipisicing elit. Eum hic aspernatur officiis officia quisquam dolore deleniti illum omnis non exercitationem, amet ab rem ducimus iste dicta possimus, esse natus molestias.</li>
-                <li>Lorem ipsum dolor sit amet consectetur adipisicing elit. Sed numquam est consectetur! Voluptatem eum molestiae fuga similique, corporis quidem harum soluta. Aperiam officia cum blanditiis iste, nesciunt et earum commodi.</li>
-            </ul>
+        <section id="audio">
+            <!--Adding audio is simple. Its just like adding images & videos except be sure to add 'controls' as it provides the user functionality to control volume, playback speed, etc.-->
+            <h2>Audio</h2>
+            <audio src="./Media/making-progress-dan-phillipson-main-version-02-56-10491.mp3" controls></audio><br>
+            <!--Below is a really good website for free audio files you can incorporate into your HTML. Just sign up for a free account to download MP3 files.-->
+            <cite>https://uppbeat.io/music/</cite>
         </section>
         <hr>
-        <!--This section is dedicated solely to the <table> element and its child elements. I used it to represent my certifications, however you can populate it with whatever you choose.-->
-        <section id="Certs">
-            <table>
-                <caption><strong>Certifications</strong></caption>
-                <thead>
-                    <tr>
-                        <th>XXX</th>
-                        <td>XXX</td>
-                        <td>XXX</td>
-                        <td>XXX</td>
-                    </tr>
-                </thead>
-                <tbody>
-                    <tr>
-                        <td>XXX</td>
-                        <td>XXX</td>
-                        <td>XXX</td>
-                        <td>XXX</td>
-                    </tr>
-                    <tr>
-                        <td>XXX</td>
-                        <td>XXX</td>
-                        <td>XXX</td>
-                        <td>XXX</td>
-                    </tr>
-                    <tr>
-                        <td>XXX</td>
-                        <td>XXX</td>
-                        <td>XXX</td>
-                        <td>XXX</td>
-                    </tr>
-                </tbody>
-            </table>
+        <!--Below is my personal favorite. Creating a form that allows for user input! Please remember this is a reference/outline. It is your responsibility to write your own code.-->
+        <section id="contactForm">
+            <h2>Contact Me</h2>
+            <!--You must use the action="https://wp.zybooks.com/forms-viewer.php" as it will validate your form and is required by the PA objectives-->
+            <form action="https://wp.zybooks.com/forms-viewer.php" method="post" enctype="multipart/form-data">
+                <!--Forms can be quite intricate so do yourself a favor and do some research on them at https://www.w3schools.com/html/html_forms.asp-->
+                <div>
+                    <label for="firstName">First Name</label><br>
+                    <input type="text" name="firstName" id="firstName"><br>
+                    <label for="lastName">Last Name</label><br>
+                    <input type="text" name="lastName" id="lastName"><br>
+                    <label for="companyName">Company</label><br>
+                    <input type="text" name="companyName" id="companyName"><br>
+                    <label for="yourEmail">Email</label><br>
+                    <input type="email" name="yourEmail" id="yourEmail"><br>
+                    <label for="yourPhone">Phone Number</label><br>
+                    <input type="tel" name="yourPhone" id="yourPhone"><br>
+                    <label for="message">Write a Message</label><br>
+                    <textarea name="message" id="message"></textarea><br>
+                    <fieldset>
+                        <legend>Best Contact Time</legend>
+                        <input type="radio" id="am" name="bestTime" value="am">
+                        <label for="am">A.M.</label><br>
+                        <input type="radio" id="pm" name="bestTime" value="pm">
+                        <label for="pm">P.M.</label><br>
+                        <input type="radio" id="anytime" name="bestTime" value="anytime">
+                        <label for="anytime">Anytime</label>
+                    </fieldset><br>
+                    <label for="contactMethod">Preferred Contact Method</label>
+                    <select name="contactMethod" id="contactMethod">
+                        <option value="phone">Phone</option>
+                        <option value="email">Email</option>
+                        <option value="text">Text</option>
+                    </select>
+                    <br><br>
+                    <button type="submit">Submit</button>
+                    <button type="reset">Reset</button>
+                </div>
+            </form>
         </section>
-        <article>
-            <h3>Lorem ipsum dolor sit amet consectetur, adipisicing elit.</h3>
-        </article>
     </main>
-    <footer id="footer">
-        <span><em>Resume<br> <a href="mailto:"><em>EmailMe</em></a></em></span>
-    </footer>
 </body>
-<!--Below is the simpple javascript that Part A requires for the resume. You can use this code to meet the javascript objective.-->
-<script>
-    document.getElementById("showDate").textContent = "Date: " + new Date().toDateString();
-    console.log("Hello World!")
-</script>
+<br>
+<hr>
+<br>
+<!--Adding a footer is required and is simple to create. Just inlcude some simple links or text that will be displayed at the bottom your webpage.-->
+<!--If you like you can provide links to other HTML documents here like I did.-->
+<footer id="footer">
+    <span><a href="" target="_blank"></a> & <a href="" target="_blank"></a></span>
+</footer>
 
 </html>

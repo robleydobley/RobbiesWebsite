@@ -25,8 +25,54 @@
                 </h1>
             </div>
         </div>
-    </div>
+    </header><br>
     <!-- Header Section End -->
+    <main>
+        <section id="careerGoals">
+            <h1>My Career Goals</h1>
+            <hr>
+            <!-- Image Section -->
+            <h2>My 5 Year Plan</h2>
+            <p>Lorem ipsum dolor sit amet consectetur adipiscing elit. Quisque faucibus ex sapien
+                vitae pellentesque sem placerat.</p>
+            <img src="images/dataInfastructure.jpg" alt="Cables coming out of servers." width="40%" height="40%"
+                style=padding-bottom:10px;>
+            <br>
+            <cite>https://www.pexels.com/photo/modern-building-in-austria-19166565/</cite>
+            <hr>
+            <!-- Video Section -->
+            <h2>Long Term Goals</h2>
+            <div id="video">
+                <p>Lorem ipsum dolor sit amet consectetur adipiscing elit. Quisque faucibus ex sapien
+                    vitae pellentesque sem placerat.</p>
+                <video src="videos/happyBusiness.mp4"
+                    alt="Two people jumping high, high fiving and celebrating in an office environment" controls
+                    width="40%" style="padding-bottom: 10px;"></video>
+                <br>
+                <cite>https://www.pexels.com/video/a-happy-man-and-woman-celebrating-success-8631872/</cite>
+            </div>
+            <hr>
+            <h2>Career Outlook</h2>
+            <p>Lorem ipsum dolor sit amet consectetur adipiscing elit. Quisque faucibus ex sapien
+                vitae pellentesque sem placerat.</p>
+            <audio src="/audio/empty-moon-ian-aisling-main-version-24985-03-59.mp3" controls></audio>
+            <br>
+            <cite>https://uppbeat.io/track/ian-aisling/empty-moon</cite>
+        </section>
+    </main>
 </body>
+<footer>
+    <p id="message"></p>
+    <p id="showDate"></p>
+    <button style="margin-bottom: 25px;" onclick="updateDate()">Why should you hire me?</button>
+</footer>
+<script>
+    function updateDate() {
+        document.getElementById("message").textContent = "I need to support my cats.";
+        document.getElementById("showDate").textContent = "Date: " + new Date().toDateString();
+        console.log("Please hire me. My cats only eat the finest kibble.");
+    }
+</script>
+
 
 </html>

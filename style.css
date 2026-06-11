@@ -17,6 +17,15 @@ div * {
 	padding-right: 17px;
 }
 
+#careerGoals {
+	border-style: groove;
+	border-radius: 10px;
+	padding-left: 17px;
+	padding-right: 17px;
+	margin-left: 17px;
+	margin-right: 17px;
+}
+
 #resume {
 	border-style: groove;
 	border-radius: 10px;
