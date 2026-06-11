@@ -8,6 +8,10 @@ body {
 	background: white;
 }
 
+div * {
+	background: fixed;
+}
+
 #container {
 	padding-left: 17px;
 	padding-right: 17px;
