@@ -13,7 +13,7 @@ jobs:
         uses: hustcer/deepseek-review@v1
         with:
           chat-token: ${{ secrets.CHAT_TOKEN }}
-          model: deepseek-v4-flash
+          model: deepseek-chat  # Changed from deepseek-v4-flash
           include-patterns: "**/*.html,**/*.css"
           sys-prompt: |
             You are an expert web development instructor reviewing a students personal portfolio project.
