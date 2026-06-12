@@ -20,19 +20,10 @@ jobs:
           # Tell it to only review HTML and CSS files
           include-patterns: "**/*.html,**/*.css"
           # Feel free to customize the prompt to focus on your needs
-          sys-prompt: |Review the code in this repository by the standard set forth below. Exclude the file "Test.html"
-            Note: The file size limit for your entire submission cannot exceed 200 MB. Each individual file cannot be larger than 16 MB
-            
-  
-              A.  Create an HTML-based résumé that includes each of the following HTML elements, in no particular order:
-              
-               
-              
-              Note: A fictional or hypothetical résumé is acceptable for this task.
-              
-               
-              
-              •   Basic Structure:
+          sys-prompt: |
+          ""Review the code in this repository by the standard set forth below. Exclude the file "test.html"
+
+ •   Basic Structure:
               
               -   HTML
               
@@ -356,3 +347,4 @@ jobs:
               Competent
               
               This submission includes satisfactory use of grammar, sentence fluency, contextual spelling, and punctuation, which promote accurate interpretation and understanding.  
+""
