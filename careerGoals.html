@@ -31,33 +31,79 @@
         <section id="careerGoals">
             <h1>My Career Goals</h1>
             <hr>
-            <!-- Image Section -->
-            <h2>My 5 Year Plan</h2>
-            <p>Lorem ipsum dolor sit amet consectetur adipiscing elit. Quisque faucibus ex sapien
-                vitae pellentesque sem placerat.</p>
-            <img src="images/dataInfastructure.jpg" alt="Cables coming out of servers." width="40%" height="40%"
-                style=padding-bottom:10px;>
-            <br>
-            <cite>https://www.pexels.com/photo/modern-building-in-austria-19166565/</cite>
-            <hr>
-            <!-- Video Section -->
-            <h2>Long Term Goals</h2>
-            <div id="video">
+            <section>
+                <!-- Image Section -->
+                <h2>My 5 Year Plan</h2>
                 <p>Lorem ipsum dolor sit amet consectetur adipiscing elit. Quisque faucibus ex sapien
                     vitae pellentesque sem placerat.</p>
-                <video src="videos/happyBusiness.mp4"
-                    alt="Two people jumping high, high fiving and celebrating in an office environment" controls
-                    width="40%" style="padding-bottom: 10px;"></video>
+                <img src="images/dataInfastructure.jpg" alt="Cables coming out of servers." width="40%" height="40%"
+                    style=padding-bottom:10px;>
                 <br>
-                <cite>https://www.pexels.com/video/a-happy-man-and-woman-celebrating-success-8631872/</cite>
-            </div>
-            <hr>
-            <h2>Career Outlook</h2>
-            <p>Lorem ipsum dolor sit amet consectetur adipiscing elit. Quisque faucibus ex sapien
-                vitae pellentesque sem placerat.</p>
-            <audio src="/audio/empty-moon-ian-aisling-main-version-24985-03-59.mp3" controls></audio>
-            <br>
-            <cite>https://uppbeat.io/track/ian-aisling/empty-moon</cite>
+                <cite>https://www.pexels.com/photo/modern-building-in-austria-19166565/</cite>
+                <hr>
+            </section>
+            <!-- Video Section -->
+            <section>
+                <h2>Long Term Goals</h2>
+                <div id="video">
+                    <p>Lorem ipsum dolor sit amet consectetur adipiscing elit. Quisque faucibus ex sapien
+                        vitae pellentesque sem placerat.</p>
+                    <video src="videos/happyBusiness.mp4"
+                        alt="Two people jumping high, high fiving and celebrating in an office environment" controls
+                        width="40%" style="padding-bottom: 10px;"></video>
+                    <br>
+                    <cite>https://www.pexels.com/video/a-happy-man-and-woman-celebrating-success-8631872/</cite>
+                </div>
+                <hr>
+            </section>
+            <!-- Audio Section -->
+            <section>
+                <h2>Career Outlook</h2>
+                <p>Lorem ipsum dolor sit amet consectetur adipiscing elit. Quisque faucibus ex sapien
+                    vitae pellentesque sem placerat.</p>
+                <audio src="/audio/empty-moon-ian-aisling-main-version-24985-03-59.mp3" controls></audio>
+                <br>
+                <cite>https://uppbeat.io/track/ian-aisling/empty-moon</cite>
+                <hr>
+            </section>
+            <!-- Contact Form Section -->
+            <section id="contactMe">
+                <h2>Contact Me</h2>
+                <form action="https://wp.zybooks.com/form-viewer.php" method="post" enctype="multipart/form-data">
+                    <label for="firstName">First Name</label><br>
+                    <input type="text" id="firstName" name="firstName"><br><br>
+                    <label for="lastName">Last Name</label><br>
+                    <input type="text" id="lastName" name="lastName"><br><br>
+                    <label for="orgName">Org Name</label><br>
+                    <input type="text" id="orgName" name="orgName"><br><br>
+                    <label for="emailAddress">Email Address</label><br>
+                    <input type="email" id="emailAddress" name="emailAddress"><br><br>
+                    <label for="phoneNumber">Phone Number</label><br>
+                    <input type="tel" id="phoneNumber" name="phoneNumber"></label><br>
+                    <label for="message">Please leave a message.</label><br>
+                    <textarea id="message" name="message"></textarea><br><br>
+                    <fieldset style="width: 40%;">
+                        <legend>Best Contact Time</legend>
+                        <input type="radio" id="am" name="bestTime" value="am">
+                        <label for="am">A.M.</label><br>
+                        <input type="radio" id="pm" name="bestTime" value="pm">
+                        <label for="pm">P.M.</label><br>
+                        <input type="radio" id="anytime" name="bestTime" id="anytime">
+                        <label for="anytime">Anytime</label>
+                    </fieldset><br>
+                    <div style="width:42% ;border-style: groove; border-width: 1px; padding: 5px;">
+                    <label for="contactType">Preferred Contact Method</label>
+                    <select name="contactType" id="contactType">
+                        <option value="phone">Phone</option>
+                        <option value="email">Email</option>
+                        <option value="text">Text</option>
+                    </select></div>
+                    <br>
+                    <button type="submit">Submit</button>
+                    <button type="reset">Reset Forms</button>
+
+                </form>
+            </section>
         </section>
     </main>
 </body>
@@ -70,7 +116,6 @@
     function updateDate() {
         document.getElementById("message").textContent = "I need to support my cats.";
         document.getElementById("showDate").textContent = "Date: " + new Date().toDateString();
-        console.log("Please hire me. My cats only eat the finest kibble.");
     }
 </script>
 

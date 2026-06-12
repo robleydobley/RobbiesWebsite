@@ -35,6 +35,10 @@ div * {
 	margin-right: 17px;
 }
 
+#contactMe {
+	margin: 10px;
+}
+
 /* RESUME HEADER */
 #header {
 	display: block;

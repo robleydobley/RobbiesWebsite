@@ -16,3 +16,14 @@ Link: https://stackoverflow.com/questions/11803785/a-href-links-will-not-work-in
 
 
 Issue 2.
+When using the "Submit" button for the contact form on "Career Goals". The form data does not clear on click. It seems like the button does not work.
+Update 1: I'm currently testing using javascript to make it write the forms to the console, but the issue seems to be with the submit button. I'm going to google a bit. The rest button works.
+I'm now getting a 404 error. I've been switching back and forth between button type being 'submit' and 'button'. Using 'submit' with the onlick function to write to the console gets me a 404.
+I'm looking into 'https://wp.zybooks.com/forms-viewer.php' as the action. I'm not very familiar with it but I read that it's perferred for WGU.
+Update 2: I'm scrapping using the javascript to write the form data. It introduced to many variables that could be the issue. Including using the LivePreviewer in VS Code.
+
+Solution 2: I made a typo in zybooks link. I inlcluded an s in the link. See below.
+<form action="https://wp.zybooks.com/forms-viewer.php" method="post" enctype="multipart/form-data"> Bad Code
+<form action="https://wp.zybooks.com/form-viewer.php" method="post" enctype="multipart/form-data"> Good Code
+
+Source 2: No source, but lesson learned - read carefully.
