@@ -1,0 +1,358 @@
+name: DeepSeek Code Review
+
+on:
+  pull_request:
+    types: [opened, synchronize, reopened]
+
+permissions:
+  pull-requests: write
+  contents: read
+
+jobs:
+  review:
+    runs-on: ubuntu-latest
+    steps:
+      - name: DeepSeek Code Review
+        uses: hustcer/deepseek-review@v1
+        with:
+          chat-token: ${{ secrets.CHAT_TOKEN }}
+          model: deepseek-v4-flash # You can also use 'deepseek-reasoner' for R1
+          # Tell it to only review HTML and CSS files
+          include-patterns: "**/*.html,**/*.css"
+          # Feel free to customize the prompt to focus on your needs
+          sys-prompt: |Review the code in this repository by the standard set forth below. Exclude the file "Test.html"
+            Note: The file size limit for your entire submission cannot exceed 200 MB. Each individual file cannot be larger than 16 MB
+            
+  
+              A.  Create an HTML-based résumé that includes each of the following HTML elements, in no particular order:
+              
+               
+              
+              Note: A fictional or hypothetical résumé is acceptable for this task.
+              
+               
+              
+              •   Basic Structure:
+              
+              -   HTML
+              
+              -   head
+              
+              -   title
+              
+              -   body
+              
+              •   Content Organization:
+              
+              -   header
+              
+              -   nav
+              
+              ~   links to other documents in the portfolio
+              
+              -   main
+              
+              -   section
+              
+              -   footer
+              
+              -   article
+              
+              •   Text and Content:
+              
+              -   at least three different heading elements (h1–h6)
+              
+              -   span
+              
+              -   paragraph
+              
+              -   line break
+              
+              -   horizontal rule
+              
+              -   div (to contain the current date from JavaScript)
+              
+              •   Links and Lists:
+              
+              -   at least one hyperlink
+              
+              -   at least one ordered or unordered list
+              
+              •   Tables
+              
+              -   At least 1 HTML table, with a caption, and at least four columns and three rows
+              
+              •   Semantic and Miscellaneous
+              
+              -   strong
+              
+              -   em
+              
+              •   Interactive and Scripting
+              
+              -   script
+              
+              ~   Inline JavaScript to populate the date (within div defined above in Text and Content)
+              
+              ~   Inline JavaScript to write an appropriate message or value to the console
+              
+               
+              
+              Note: A fictional or hypothetical resume is acceptable for this task.
+              
+               
+              
+              B.  Create an HTML-based cover letter page that includes each of the following HTML elements, in no particular order:
+              
+               
+              
+              Note: A hypothetical cover letter is acceptable for this task.
+              
+               
+              
+              •   Basic Structure:
+              
+              -   HTML
+              
+              -   head
+              
+              -   title
+              
+              -   body
+              
+              •   Content Organization:
+              
+              -   header
+              
+              -   nav
+              
+              ~   links to other documents in the portfolio
+              
+              -   main
+              
+              -   section
+              
+              -   footer
+              
+              -   article
+              
+              •   Text and Content:
+              
+              -   span
+              
+              -   paragraph or paragraphs
+              
+              -   horizontal rule
+              
+              -   strong
+              
+              -   em
+              
+              -   mark
+              
+               
+              
+              C.  Create an HTML-based career goals document that shows your HTML and CSS skills that includes each of the following HTML elements, in no particular order:
+              
+              •   Basic Structure:
+              
+              -   HTML
+              
+              -   head
+              
+              -   title
+              
+              -   body
+              
+              •   Content Organization:
+              
+              -   header
+              
+              -   nav
+              
+              ~   links to other documents in the portfolio
+              
+              -   main
+              
+              -   footer
+              
+              •   Text and Content:
+              
+              -   *Locally sourced image of your choice (keep it professional, nothing inappropriate)
+              
+              -   *Locally sourced audio of your choice (keep it professional, nothing inappropriate)
+              
+              -   *Locally sourced video of your choice (keep it professional, nothing inappropriate)
+              
+              
+              *Locally sourced means that the multimedia files should be included with your submission for evaluation and the appropriate relative URLs should be used within your HTML code to display the multimedia files in the browser view. No links to online resources allowed.
+              
+              
+              -   HTML Form (to gather user information)
+              
+               
+              
+              Required Form Fields (with applicable attributes [i.e., name, id, etc.])
+              
+              
+              Note: the required form action attribute value should be https://wp.zybooks.com/form-viewer.php
+              
+              
+              ~   first name
+              
+              ~   last name
+              
+              ~   company name
+              
+              ~   email address (type=email)
+              
+              ~   phone number (type=tel)
+              
+              ~   message (text area)
+              
+              ~   best contact time (radio buttons)
+              
+                  •   display values should be: a.m., p.m., anytime
+              
+              ~   select list (single option)
+              
+               •   display options should be: phone, email, text
+              
+              ~   submit button (type=submit)
+              
+               
+              
+              D.  Create one external CSS stylesheet that is linked to ALL of your HTML pages. Ensure that your CSS includes the following components, in no particular order, each of which is applied to at least one HTML element in Aspects A, B, or C
+              
+              •   element selector
+              
+              •   class selector
+              
+              •   id selector
+              
+              •   descendant selector
+              
+              •   pseudo-class selector
+              
+              •   universal selector
+              
+              •   font property
+              
+              •   color property
+              
+              •   font-style property
+              
+              •   background-color property
+              
+              •   margin property
+              
+              •   padding property
+              
+              •   border property
+              
+              •   at least 1 list-style property
+              
+               
+              
+              E.  Acknowledge sources, using in-text citations and references, for content that is quoted, paraphrased, or summarized.
+              
+               
+              
+              F.  Demonstrate professional communication in the content and presentation of your submission.
+              
+               
+              File Restrictions
+              File name may contain only letters, numbers, spaces, and these symbols: ! - _ . * ' ( )
+              File size limit: 200 MB
+              File types allowed: doc, docx, rtf, xls, xlsx, ppt, pptx, odt, pdf, csv, txt, qt, mov, mpg, avi, mp3, wav, mp4, wma, flv, asf, mpeg, wmv, m4v, svg, tif, tiff, jpeg, jpg, gif, png, zip, rar, tar, 7z
+              Rubric
+              A:RÉSUMÉ
+              
+              Not Evident
+              
+              The submission does not include a résumé.
+              	
+              
+              Approaching Competence
+              
+              The submission includes a résumé, but the résumé does not contain each of the given elements.
+              	
+              
+              Competent
+              
+              The submission includes a résumé that contains each of the given elements.
+              B:COVER LETTER
+              
+              Not Evident
+              
+              The submission does not include a cover letter.
+              	
+              
+              Approaching Competence
+              
+              The submission includes a cover letter, but the cover letter does not contain each of the given elements.
+              	
+              
+              Competent
+              
+              The submission includes a cover letter that contains each of the given elements.
+              C:CAREER GOALS
+              
+              Not Evident
+              
+              The submission does not include a career goals document.
+              	
+              
+              Approaching Competence
+              
+              The submission includes a career goals document, but the career goals document does not contain each of the given elements.
+              	
+              
+              Competent
+              
+              The submission includes a career goals document that contains each of the given elements.
+              D:CSS STYLE SHEET
+              
+              Not Evident
+              
+              The submission does not include an external CSS style sheet.
+              	
+              
+              Approaching Competence
+              
+              The submission includes an external CSS style sheet, but the style sheet does not contain each of the given CSS components or is not linked to all HTML pages.
+              	
+              
+              Competent
+              
+              The submission includes one external CSS style sheet that is linked to all HTML pages and the given CSS components applied to at least 1 HTML element in parts A, B, or C.
+              E:SOURCES
+              
+              Not Evident
+              
+              The submission does not include both in-text citations and a reference list for sources that are quoted, paraphrased, or summarized.
+              	
+              
+              Approaching Competence
+              
+              The submission includes in-text citations for sources that are quoted, paraphrased, or summarized and a reference list; however, the citations or reference list is incomplete or inaccurate.
+              	
+              
+              Competent
+              
+              The submission includes in-text citations for sources that are properly quoted, paraphrased, or summarized and a reference list that accurately identifies the author, date, title, and source location as available.
+              F:PROFESSIONAL COMMUNICATION
+              
+              Not Evident
+              
+              This submission includes pervasive errors in professional communication related to grammar, sentence fluency, contextual spelling, or punctuation, negatively impacting the professional quality and clarity of the writing. Specific errors have been identified by Grammarly for Education under the Correctness category.   
+              	
+              
+              Approaching Competence
+              
+              This submission includes substantial errors in professional communication related to grammar, sentence fluency, contextual spelling, or punctuation. Specific errors have been identified by Grammarly for Education under the Correctness category.   
+              	
+              
+              Competent
+              
+              This submission includes satisfactory use of grammar, sentence fluency, contextual spelling, and punctuation, which promote accurate interpretation and understanding.  
